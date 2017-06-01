@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>心理测试-答题详情</title>
+    <meta name="viewport" content="width = device-width,height = device-height, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/yiban-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/psychlogyTest.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <style type="text/css">
+    body {
+        background-color: #97d060;
+        /*color: ;*/
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-heart">&nbsp;贴Think</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="storyCommunityPage.html">故事社区</a></li>
+                    <li><a href="psychologyCommunityPage.html">心理社区</a></li>
+                    <li><a href="psychlogyConsultPage.html">心理咨询室</a></li>
+                    <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心理测评 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">心理健康测试</a></li>
+                            <li><a href="#">九型人格测试</a></li>
+                            <li><a href="#">趣味心理测试</a></li>
+                            <li><a href="#">职业规划测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">心理咨询量表测试</li>
+                            <li><a href="#">抑郁症测试</a></li>
+                            <li><a href="#">焦虑症测试</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="psychlogyTestPage.html">心理测试</a></li>
+                    <li>
+                        <a href="personalHomePage.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人账户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="personalHomePage.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;退出账户</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;切换账户</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <!-- 主体 -->
+    <div class="container" style="margin-top: 60px;">
+        <!-- 测试页公共栏目 -->
+        <div class="psychlogyTest-header-container container">
+            <h3 style="font-weight: bolder;font-size: 2.4em;padding-bottom:.3em;border-bottom:1px solid #bbb;color: #f8f8f8">测试类型</h3>
+            <div class="psychlogyTest-header-model-container row">
+                <a href="#" class="psychlogyTest-header-model-link">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_1.jpg" class="img-responsive">
+                        </div>
+                        <span>健康测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+                <a href="#" class="psychlogyTest-header-model-link">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_2.jpg" class="img-responsive">
+                        </div>
+                        <span>性格测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+                <a href="#" class="psychlogyTest-header-model-link">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_3.jpg" class="img-responsive">
+                        </div>
+                        <span>能力测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+                <a href="#" class="psychlogyTest-header-model-link">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_4.jpg" class="img-responsive">
+                        </div>
+                        <span>性心理测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+                <!-- 四个 -->
+                <a href="#" class="psychlogyTest-header-model-link ">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_5.jpg" class="img-responsive">
+                        </div>
+                        <span>人际测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+                <a href="#" class="psychlogyTest-header-model-link ">
+                    <div class="psychlogyTest-header-model col-lg-2 col-md-6 col-xs-6">
+                        <div class="psychlogyTest-header-model-img">
+                            <img src="img/ptp/test_6.jpg" class="img-responsive">
+                        </div>
+                        <span>职场测试</span>
+                        <!-- </a> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 测试问卷详情页面 -->
+        <div class="container" style="margin-top:20px;padding: 0;background-color: white">
+            <div class="psychlogyTest-detail-main col-lg-8 col-md-8">
+                <div class="psychlogyTest-detail-main-header">
+                    <h1 style="font-weight: bolder">心理素质测试</h1>
+                    <div class="psychlogyTest-detail-main-answerStatus" style="display: flex;justify-content: space-between;" id="answerStatus">
+                        <small>您正在做测试，已经完成<span id="answerStatus_percents">10%</span></small>
+                        <small><span id="answerStatus_fraction">1/10</span>题</small>
+                    </div>
+                    <!-- 进度条 -->
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="psychlogyTest-detail-main-question-body"  >
+                    <div class="psychlogyTest-detail-main-questionTitle" >
+                        <h3 class="question" style="height: 3em;">1.在朋友的婚礼上，你未料到会被邀请发言，在毫无准备的情况下，你：
+                        </h3>
+                    </div>
+                    <div class="psychlogyTest-detail-main-questionContent" >
+                        <div class="inputsBox">
+                            <div class="inputsBox-input" style="border-radius:5px 5px 0 0;">
+                                <input type="radio" name="_1_answer" id="answer_1">
+                                <label for="answer_1" class="answer" id="Answer_1th" onclick="return nextQuestion()">双手发抖，结结巴巴说不出话来</label>
+                            </div>
+                            <div class="inputsBox-input">
+                                <input type="radio" name="_1_answer" id="answer_2">
+                                <label for="answer_2" class="answer" id="Answer_2th" onclick="nextQuestion()">
+                                    感到很荣幸，简短地讲几句
+                                </label>
+                            </div>
+                            <div class="inputsBox-input">
+                                <input type="radio" name="_1_answer" id="answer_3">
+                                <label for="answer_3" class="answer" id="Answer_3th" onclick="nextQuestion()">
+                                    很平淡的拒绝了
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="psychlogyTest-detail-sidebar col-lg-4 col-md-4 hidden-xs" style="padding: 10px;">
+               <div class="psychlogyTest-model-title-container col-xs-6" style="">
+                   <!-- <div style="width:2%;height:2em;background: green"></div> -->
+                   <h4 style="" class="psychlogyTest-model-title-text">热门测评</h4>
+               </div>
+               <div class="psychlogyTest-detail-sidebar-model col-xs-6" style="width:100%;height:12em;margin-bottom:1.5em">
+                   <a href="#">
+                       <img src="img/ptp/hot_post_3.jpg" style="width: 100%;height: 100%">
+                   </a>
+               </div>
+               <div class="psychlogyTest-detail-sidebar-model col-xs-6" style="width:100%;height:12em;margin-bottom:1.5em">
+                   <a href="#">
+                       <img src="img/ptp/hot_post_2.jpg" style="width: 100%;height: 100%">
+                   </a>
+               </div>
+               <div class="psychlogyTest-detail-sidebar-model col-xs-6" style="width:100%;height:12em;margin-bottom:1.5em">
+                   <a href="#">
+                       <img src="img/ptp/hot_post_4.jpg" style="width: 100%;height: 100%">
+                   </a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+<div class="container visible-lg">
+            <footer class="yiban-footer">
+        <div class="container clearfix">
+            <div class="about-yiban">
+                <a href="/service_treaty.php" target="_blank">用户协议</a>
+                <span>|</span>
+                <a href="http://open.yiban.cn/" target="_blank">开放平台</a>
+                <span>|</span>
+                <a href="http://hr.yiban.cn/" target="_blank">校园招聘</a>
+                <span>|</span>
+                <a href="http://search.51job.com/list/co,c,2306770,0000,10,1.html" target="_blank">社会招聘</a>
+                <span>|</span>
+                <a href="mailto:contact@yiban.cn">联系我们</a>
+                <span>|</span>
+                <a href="/help.html" target="_blank">客服中心</a>
+                <span>|</span>
+                <a href="/mobile/index.html" target="_blank">手机易班</a>
+            </div>
+            <div class="yiban-brand clearfix">
+                <a class="icon brand-youke" href="http://www.yooc.me/u/yb2yooc" target="_blank"></a>
+                <a class="icon brand-yiban" href="http://daxue.yooc.me/u/yb2daxue" target="_blank"></a>
+                <a class="icon brand-k" href="http://xueyuan.yooc.me/u/yb2xueyuan" target="_blank"></a>
+                <a class="icon brand-boya" href="http://www.21boya.cn/" target="_blank"></a>
+                <a class="icon brand-zz" href="http://zz.yiban.cn/" target="_blank"></a>
+                <a class="icon brand-hetaoshu" href="http://www.hetaoshu.com/" target="_blank"></a>
+            </div>
+            <div class="yiban-Legal clearfix">
+                <p class="copyright" style="color: #324f68 !important;font-size:13px !important;">违法和不良信息举报电话：021-60161000 Copyright © 2009-2017 <a href="/">YIBAN</a>. All Rights Reserved. <a href="http://www.miibeian.gov.cn" target="_bank">沪ICP备15046059号-6</a>
+                    <br>版权所有：上海易班企业发展有限公司</p>
+                <p class="copyright" style="margin-top:15px;">
+                    <a class="jubao" href="http://www.12377.cn/" target="_blank"><img src="img/yiban-footer/12377.png" title="中国互联网违法和不良信息举报中心"></a>
+                    <a class="jubao" href="http://jubao.12377.cn:13225/reportinputcommon.do" target="_blank"><img src="img/yiban-footer/jubao3.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
+                    <a class="jubao" href="http://www.shjbzx.cn/" target="_blank"><img src="img/yiban-footer/jubao2.png" title="上海市互联网违法和不良信息举报中心"></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>    
+    <script type="text/javascript">
+    var NextQuestion = [
+        // "1.在朋友的婚礼上，你未料到会被邀请发言，在毫无准备的情况下，你：",
+        "2.你在餐馆刚用过餐，服务员来结账，你忽然发现身上带的钱不够，此刻，你会：",
+        "3.假如你乘坐公共汽车时忘了买票，被人查到，你的反应是：",
+        "4.有度假机会时，我宁愿"
+    ];
+    var NextAnswer = [
+        "感到很窘迫，脸发红",
+        "自嘲一下，马上对服务员实话实说",
+        "在身上东摸西摸，拖延时间",
+        "尴尬，出冷汗",
+        "冷静，不慌不忙，接受处理",
+        "强作微笑",
+        "去一个繁华的都市",
+        "介于A与C之间",
+        "闲居清静而偏僻的郊区"
+    ]
+    var answerStatus_percents = ["20%","30%","40%","50%","60%","70%","80%","90%","100%"];
+    var answerStatus_fraction = ["2/10","3/10","4/10","5/10","6/10","7/10","8/10","9/10","10/10"];
+    var quetionCount = new Number(0);
+    // $(document).ready(function(){
+           // $("label.answer").click(nextQuestion());
+    // });
+
+    function nextQuestion() {
+        var question = $(".question")[0]; //</h3>获取问题的标题结点<h3></h3>
+        // alert("点击成功！");
+        //更换问题内容
+        $(".question").text(NextQuestion[quetionCount%10]);
+        var Answer_1th = $("#Answer_1th").text(NextAnswer[quetionCount+0]);
+        var Answer_2th = $("#Answer_2th").text(NextAnswer[quetionCount+1]);
+        var Answer_3th = $("#Answer_3th").text(NextAnswer[quetionCount+2]);
+        //更新答题状态条
+        var answerStatus = $("#answerStatus");
+        answerStatus.find("#answerStatus_percents").text(answerStatus_percents[quetionCount]); 
+        answerStatus.find("#answerStatus_fraction").text(answerStatus_fraction[quetionCount]); 
+        var progressbar = $(".progress-bar");
+        progressbar.css("width",answerStatus_percents[quetionCount]);
+        quetionCount++;
+    }
+    </script>
+</body>
+
+</html>

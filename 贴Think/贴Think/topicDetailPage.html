@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>话题详情</title>
+	   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style type="text/css">
+.Grid{
+	display: flex;
+}
+.Grid-cell{
+	flex:1;
+}
+.Grid-cell.u-full{
+	flex:0 0 25%;
+}
+.Grid-cell.u-1of4 {
+  flex: 0 0 70%;
+}
+.Grid-cell.u-1of2 {
+  flex: 0 0 50%;
+}
+.Grid-cell.u-full3{
+	flex:0 0 15%;
+}
+.Grid-cell.u-full5{
+	flex:0 0 10%;
+}
+.Media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Media-figure {
+  margin-right: 1em;
+}
+
+.Media-body {
+  flex: 1;
+}
+nav{
+	background-color: #51bdeb;
+}
+body{
+	width: 80%;
+	margin-left: 10%;
+	background-color: #fff; 
+	font-family: "微软雅黑";
+}
+.comment{
+	display: flex;
+		display:  -webkit-flex;
+		flex-wrap: nowrap;
+		
+		align-content: space-around;
+}
+.comment.left{
+	margin-bottom: 100px;
+	justify-content:flex-end;
+	border-bottom: 1px solid #cccfff;
+}
+a{
+	text-decoration: none;
+}
+a:link{
+color: black;
+}
+a:hover{
+	color: red;
+}
+.pgrid{
+	margin-top: 5px;
+}
+.picture{
+	border-radius: 25%;
+	width: 240px;
+	height: 180px;
+	border:1px solid #cc99cc;
+	overflow: hidden;
+}
+.thead{
+	border-radius: 50%;
+	width: 120px;
+	height: 90px;
+	/*border:1px solid #cc99cc;*/
+	overflow: hidden;
+}
+.inhead{
+	margin-left: 20px;
+	margin-right: 20px; 
+	width: 60px;
+	height: 60px;
+}
+.little{
+	font-size: 12px;
+	color: #cc99;
+}
+.word{
+	font-family: "楷体";
+	font-size: 18px;
+}
+.bg{
+	color: #cc99;
+	opacity: 0.7;
+}
+.inGrid{
+	background-color:#e6e6f2;
+	width: 75%;
+	margin-left: 20%;
+	opacity: 0.8;
+	font-size: 12px;
+}
+</style>
+<body>
+<header>
+</header>
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-heart">&nbsp;贴Think</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">&nbsp;<span class="glyphicon glyphicon-home"></span>&nbsp;</a></li>
+                    <li><a href="storyCommunityPage.html">故事社区</a></li>
+                    <li><a href="psychologyCommunityPage.html">心理社区</a></li>
+                    <li><a href="#about">心理咨询室</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心理测评 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">心理健康测试</a></li>
+                            <li><a href="#">九型人格测试</a></li>
+                            <li><a href="#">趣味心理测试</a></li>
+                            <li><a href="#">职业规划测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">心理咨询量表测试</li>
+                            <li><a href="#">抑郁症测试</a></li>
+                            <li><a href="#">焦虑症测试</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人账户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">退出账户</a></li>
+                            <li><a href="#">切换账户</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div style="margin-top: 120px;">
+	
+
+<article class="pgrid">
+<section>
+	<h4  class="page-header">标题：为什么我的情绪问题越来越严重？</h4>
+</section>
+<section class="Grid">
+  <p class="Grid-cell u-full4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是个脾气特别暴躁的人。尤其是对家人，总是肆无忌惮的发火，可是事后又经常后悔，对不起家人，而对于外人又总是忍着，特别两极化。我该怎么办？每次和父母聊天就异常的激动，希望自己可以和他们成为朋友，而不是说教训我，我也感觉到了自己心里有强大的攻击感。父母叫我做事情时我总是会莫名其妙的暴躁，我该怎么办?</p>
+  <div class="picture">
+  	 <img src="img/personalHomePage/youyu.jpg" alt="" width="240px" height="180px">
+  </div>
+  </section>
+ <section class="comment left">
+  	<p class="little">举报(0)</p>
+  </section>
+</article>
+
+<article >
+ <h4><span class="label label-success">>>>热门评论</span></h4>
+  <section  class="Grid">
+ 	 <div class="thead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user.png" alt="" width="120px" height="90px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#"> <p style="float: left;">舍起风华</p></a>
+  	 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-1</span>
+  	 </p>
+  	 <p>
+  	 	每一次看文章都能有些新收获。之前一直恨家庭里的长辈那么功利，对我的要求那么苛刻，让我一直感受不到自己是一个有价值的存在，恨父母那么懦弱，那么疏冷。现在终于明白了，没有人会无缘无故那么功利，没有人天生会自我埋藏自我，真的家族创伤，很有道理。
+  	 </p>
+  	 <p class="little"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止2017年5月1日共有120条回复,点击查看</a></p>
+  	 </div>
+  </section>
+  <section class="comment left">
+  	<p class="little"><a href="#"><span>回复(120)</span></a></p>
+  	<p class="little"><a href="#">
+          <span class="glyphicon glyphicon-hand-up"></span>
+        </a>(42)</p>
+     <p class="little"> <a href="#">
+          <span class="glyphicon glyphicon-hand-down"></span>
+        </a>(20)</p>
+  </section>
+</article>
+<article >
+<h4><span class="label label-info">>>>基础评论</span></h4>
+  <section  class="Grid">
+  	 <div class="thead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user2.png" alt="" width="120px" height="90px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	 <a href="#"> <p style="float: left;">鱼尾QAQ</p></a>
+  	 <p style="float: left;">
+  	 	<img src="img/personalHomePage/logo.png" width="20px" height="20px"> <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	学会情绪管理，是年轻人的必修课。
+  	 </p>
+  	 </div>
+  </section>
+    <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user6.png" alt="用户头像" width="80px" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">菜菜</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	管理情绪吗？观照自己的内心，就不会那么容易的被无意识的动力控制去承接别人的情绪。<br>
+  	 	当你忍不住想要去承接别人的情绪的时候，当你忍不住想要去为别人的情绪负责的时候，去看看自己的心理动力是从哪里来的。是真的想要帮助别人，还是因为害怕出现冲突。
+  	 </p>
+  	 </div>
+  </section>
+    <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user7.jpg" alt="用户头像" width="100px" height="80px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">离不去才有戏</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-4</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	承担他人的责任，承接别人的情绪，地道的拯救者的角色，如果突然放下了这个角色，你会是谁？这种感觉很容易让我们觉得，好像失去了存在感。
+  	 </p>
+  	 </div>
+  </section>
+     <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user2.png" alt="用户头像" width="70px" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">鱼尾QAQ</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-4</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	当孩子的感受不被妈妈看见时，孩子为了维持关系，孩子会围着妈妈的感觉转，然而就失去自我。当我们的感受不被看到的时候，这种感觉太可怕了。
+  	 </p>
+  	  <p class="little"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有55条回复,点击查看</a></p>
+  	   <button type="button" class="btn btn-info">我也说一句</button>
+  	  </div>
+  </section>
+  <section class="comment left">
+  
+  	<p class="little"><a href="#"><span>回复(58)</span></a></p>
+  	<p class="little"><a href="#">
+          <span class="glyphicon glyphicon-hand-up"></span>
+        </a>(42)</p>
+     <p class="little"> <a href="#">
+          <span class="glyphicon glyphicon-hand-down"></span>
+        </a>(20)</p>
+  </section>
+ <section  class="Grid">
+ <div class="thead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user3.png" alt="" width="120px" height="90px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	 <a href="#">  <p style="float: left;">听海Silent</p></a>
+  	  <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-1</span>
+  	 </p>
+  	 <p>
+  	 	学会情绪管理，是年轻人的必修课。
+  	 </p>
+  	 </div>
+
+  </section>
+  <section class="comment left">
+  	<p class="little">回复(0)</p>	<p class="little"><a href="#">
+          <span class="glyphicon glyphicon-hand-up"></span>
+        </a>(42)</p>
+     <p class="little"> <a href="#">
+          <span class="glyphicon glyphicon-hand-down"></span>
+        </a>(20)</p>
+  </section> 
+  <section  class="Grid">
+  	 <div class="thead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user2.png" alt="" width="120px" height="90px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	 <a href="#">  <p style="float: left;">鱼尾QAQ</p></a>
+
+  	 <p style="float: left;">
+  	 	<img src="img/personalHomePage/logo.png" width="20px" height="20px">
+  	 	 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-1</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	试着不要承担不属于自己的责任，不要去强迫自己完成父母的未竟愿望，学会用语言和身体表达爱，把代际创伤对我们情绪影响减少到最低，也许你的情绪困扰就没有那么严重了。
+  	 </p>
+  	 </div>
+
+  </section>
+  <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user5.gif" alt="" width="80px" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">还小妞</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	你没有责任，也没有能力去承接他们的痛苦，把属于他们的还给他们，找到你自己，才能发自内心的去爱
+  	 </p>
+  	 </div>
+  </section>
+   <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user2.png" alt="" width="70x" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">鱼尾QAQ</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	你确定？难不成他/她对于这事就一点错误都没有！！！天真啊，还没责任。我看都是惯出来的
+  	 </p>
+  	 <p class="little"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有22条回复,点击查看</a></p>
+  	  <button type="button" class="btn btn-info">我也说一句</button>
+  	 </div>
+
+  </section>
+
+  <section class="comment left">
+  	<p class="little">回复(24)</p>	<p class="little"><a href="#">
+          <span class="glyphicon glyphicon-hand-up"></span>
+        </a>(42)</p>
+     <p class="little"> <a href="#">
+          <span class="glyphicon glyphicon-hand-down"></span>
+        </a>(20)</p>
+  </section> 
+  <section  class="Grid">
+  	 <div class="thead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user4.jpg" alt="" width="120px" height="90px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">新国军机会</p></a>
+  	 <p style="float: left;">
+  	 	<img src="img/personalHomePage/logo.png" width="20px" height="20px"> <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	对于偶尔出现焦虑或抑郁等情绪不用太紧张，可以先尝试自己用实用技能调节，但长期出现情绪问题，有可能是心理问题，跟创伤等心理因素相关，光解决情绪问题是不够的，需要专业人士的帮助
+  	 </p>
+  	 </div>
+  </section>
+   <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user.png" alt="" width="80px" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">小姐姐</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	生命最初的关系，就是孩子和父母之间的关系，我们的自我、人格的形成，就是在和妈妈（或者其他重要的养育者）之间的互动关系中形成的，这些关系模式构成了我们的人格。
+  	 </p>
+  	 </div>
+  </section>
+   <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user7.jpg" alt="" width="80px" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">AK-47</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	如果父母能够分清边界，告诉孩子，这是父母之间的事情，和他没关系，孩子尽管难受，但是会卸下心里沉重的包袱。
+  	 </p>
+  	 </div>
+  </section>
+   <section class="Grid inGrid">
+  	 <div class="thead inhead">
+  	 <img class="Grid-cell u-full3" src="img/personalHomePage/user2.png" alt="" width="70x" height="60px">
+  	 </div>
+  	 <div class="Grid-cell">
+  	  <a href="#">  <p style="float: left;">鱼尾QAQ</p></a>
+  	 <p style="float: left;">
+  	 	回复 <p>
+  	 	&nbsp;&nbsp;&nbsp;<span class="little">2017-5-2</span>
+  	 </p>
+  	 </p>
+  	 <p>
+  	 	每个人都会有处理不了自己情绪的时候，父母也不例外，那当父母因为吵架，或者是因为自己的情绪影响了孩子，可以如何弥补对孩子造成的伤害呢？
+  	 </p>
+  	 <p class="little"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还有22条回复,点击查看</a></p>
+  	  <button type="button" class="btn btn-info">我也说一句</button>
+  	 </div>
+  </section>
+  <section class="comment left">
+  	<p class="little"><a href="#"><span>回复(21)</span></a></p>	<p class="little"><a href="#">
+          <span class="glyphicon glyphicon-hand-up"></span>
+        </a>(42)</p>
+     <p class="little"> <a href="#">
+          <span class="glyphicon glyphicon-hand-down"></span>
+        </a>(20)</p>
+  </section>
+  <section>
+  	<center>
+  		<a href="#">>>>加载更多</a>
+  	</center>
+  </section>
+</article>
+
+<article>
+	  <section  class="Grid">
+
+  	 <img class="Grid-cell u-full5 thead" src="img/personalHomePage/person.png" alt="" width="200px" height="160px">
+  	 <div class="Grid-cell">
+  	
+  	 <p class="word bg"> 图片<img src="img/personalHomePage/photo.png" width="20" height="20">视频<img src="img/mv.png"  width="20" height="20">音乐<img src="img/personalHomePage/music.png"  width="20" height="20">表情<img src="img/personalHomePage/smile.png" width="20" height="20">涂鸦<img src="img/personalHomePage/kind.png" width="20" height="20">文件<img src="img/personalHomePage/file.png"  width="20" height="20"></p>
+  	 	<textarea  rows="10" cols="124"  placeholder="要登录才能评价哦">
+  		</textarea>
+  		<p>
+  	<button type="button" class="btn btn-primary">回复</button></p>
+  	 </div>
+  </section>
+</article>
+</div>
+	<footer>
+	<center>
+		<p class="little"><a href="#">@2017 贴think</a> <a href="#">&nbsp;协议</a>|<a href="#">&nbsp;吧主制度</a>|<a href="#">&nbsp;意见反馈</a>|<a href="#">&nbsp;网络谣言警示</a></p>
+	</center>	
+	</footer>	
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="viewport" content="width = device-width,height = device-height, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+        /*background: black;*/
+    }
+    
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .section {
+        text-align: center;
+        font: 50px "Microsoft Yahei";
+        color: #fff;
+    }
+    
+    .section1 {
+        background: url(images/1.jpg) 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .section2 {
+        background: url(images/2.jpg) 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .section3 {
+        background: url(images/4.jpg) 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .section4 {
+        background: url(images/3.jpg) 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .section-page-title {
+        font-size: 2em;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+    
+    .section-page-explain {
+        text-align: center;
+        /*margin-top: -10px;*/
+        margin-top: 90px;
+        font-size: 0.5em;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
+    
+    #floatMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #floatMenu a {
+        background-color: white;
+        width: 15px;
+        height: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: 1s all;
+    }
+    
+    #floatMenu a:hover {
+        background-color: white;
+        border: 3px solid #3887b9;
+    }
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+    //#1bbc9b #4BBFC3 
+    $(function() {
+        $('#dowebok').fullpage({});
+    });
+    $(function() {
+        $('.text3').textillate({
+            initialDelay: 1000,
+            in : {
+                effect: 'bounceInDown'
+            }
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <!-- <div id="floatMenu" class="" style="display:hidden;z-index:999;position: fixed;width: 100px;height: 300px;right: 30px;">
+        <a href="#story-page"></a>
+        <a href="#psychology-page"></a>
+        <a href="#consult-page"></a>
+        <a href="#test-page"></a>
+    </div> -->
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-heart">&nbsp;贴Think</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="storyCommunityPage.html">故事社区</a></li>
+                    <li><a href="psychologyCommunityPage.html">心理社区</a></li>
+                    <li><a href="psychlogyConsultPage.html">心理咨询室</a></li>
+                    <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心理测评 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">心理健康测试</a></li>
+                            <li><a href="#">九型人格测试</a></li>
+                            <li><a href="#">趣味心理测试</a></li>
+                            <li><a href="#">职业规划测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">心理咨询量表测试</li>
+                            <li><a href="#">抑郁症测试</a></li>
+                            <li><a href="#">焦虑症测试</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="psychlogyTestPage.html">心理测试</a></li>
+                    <li>
+                        <a href="personalHomePage.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人账户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="personalHomePage.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;退出账户</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;切换账户</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="dowebok">
+        <div class="section section1" id="psychology-page">
+            <h3 class="section-page-title"><a href="psychologyCommunityPage.html" style="color:#ffc;text-shadow: 0 0 7px rgba(0,0,0,0.6);letter-spacing: 45px;">心理社区</a></h3>
+            <div class="section-page-explain" style="color: #FFc;text-shadow: 0 0 7px rgba(0,0,0,0.6)">
+                让大家为您分忧解惑
+            </div>
+        </div>
+        <div class="section section2" id="story-page">
+            <h3 class="section-page-title"><a href="storyCommunityPage.html" style="color:#3887b9;text-shadow: 0 0 7px rgba(0,0,0,0.6);letter-spacing: 45px;">故事社区</a></h3>
+            <div class="section-page-explain" style="color:#3887b9;text-shadow: 0 0 7px rgba(0,0,0,0.6)">
+                我想把故事说给你听
+            </div>
+        </div>
+        <div class="section section3" id="consult-page">
+            <h3 class="section-page-title"><a href="psychlogyConsultPage.html" style="color:#008B45;text-shadow: 0 0 7px rgba(0,0,0,0.6);letter-spacing: 45px;">心理咨询室</a></h3>
+            <div class="section-page-explain" style="color:#008B45;text-shadow: 0 0 7px rgba(0,0,0,0.6)">
+                专业导师为您解锁心灵的密码
+            </div>
+        </div>
+        <div class="section section4" id="test-page">
+            <h3 class="section-page-title"><a href="psychlogyTestPage.html" style="color:#ffffff;text-shadow: 0 0 7px rgba(0,0,0,0.6);letter-spacing: 45px;">心理测评</a></h3>
+            <div class="section-page-explain" tyle="color:#ffffff;text-shadow: 0 0 7px rgba(0,0,0,0.6)">
+                Have a try!
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    verticalCenter("floatMenu");
+
+    function verticalCenter(id) {
+        var node = document.getElementById(id);
+        node.style.top = (window.innerHeight - parseInt(node.style.height)) / 2 + "px";
+    }
+    </script>
+</body>
+
+</html>

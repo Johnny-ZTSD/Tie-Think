@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>个人用户主页</title>
+    <meta name="viewport" content="width = device-width,height = device-height, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/yiban-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <style type="text/css">
+    .Grid {
+        display: flex;
+    }
+    
+    .Grid-cell {
+        flex: 1;
+    }
+    
+    .Grid-cell.u-full {
+        flex: 0 0 100%;
+    }
+    
+    .Grid-cell.u-1of2 {
+        flex: 0 0 50%;
+    }
+    
+    .Grid-cell.u-1of3 {
+        flex: 0 0 33.3333%;
+    }
+    
+    .Grid-cell.u-1of4 {
+        flex: 0 0 25%;
+    }
+    
+    .thead {
+        border-radius: 50%;
+        margin-top: 20px;
+        width: 120px;
+        height: 90px;
+        /*border:1px solid #cc99cc;*/
+        overflow: hidden;
+    }
+    
+    .inhead {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .comment {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: nowrap;
+        align-content: space-around;
+    }
+    
+    .comment.left {
+        margin-bottom: 100px;
+        justify-content: flex-end;
+        border-bottom: 1px solid #cccfff;
+    }
+    
+    .Tissue {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+    }
+    
+    .Tissue .box {
+        background-color: #fff;
+    }
+    
+    .little {
+        font-size: 12px;
+        color: #cc99;
+    }
+    
+    .sec-picture {
+        float: left;
+        border: 1.5px solid #6495ED;
+        padding: 2px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    body {
+        font: 16px/1.5 Tahoma;
+        background-image: url(img/personalHomePage/luck.jpg);
+        background-repeat: no-repeat;
+        /*background: linear-gradient( top,#ccc,#000);*/
+    }
+    
+    #outer {
+        margin-top: 120px;
+        background-color: #fff;
+    }
+    
+    #tab {
+        overflow: hidden;
+        zoom: 1;
+        background: #F0F2F5;
+        /*border: 1px solid #000;*/
+    }
+    
+    #tab li {
+        float: left;
+        color: #707;
+        height: 47px;
+        line-height: 47px;
+        cursor: pointer;
+        padding: 0 20px;
+    }
+    
+    #tab li.current {
+        color: #000;
+        background: #E0E1E3;
+    }
+    
+    #content {
+        border: 1px solid #000;
+        border-top-width: 0;
+    }
+    
+    #content ul {
+        line-height: 25px;
+        display: none;
+        margin: 0 30px;
+        padding: 10px 0;
+    }
+    .bottom_footer {  
+       position: fixed; 
+       bottom: 0px;  
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-heart">&nbsp;贴Think</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="storyCommunityPage.html">故事社区</a></li>
+                    <li><a href="psychologyCommunityPage.html">心理社区</a></li>
+                    <li><a href="psychlogyConsultPage.html">心理咨询室</a></li>
+                    <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心理测评 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">心理健康测试</a></li>
+                            <li><a href="#">九型人格测试</a></li>
+                            <li><a href="#">趣味心理测试</a></li>
+                            <li><a href="#">职业规划测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">心理咨询量表测试</li>
+                            <li><a href="#">抑郁症测试</a></li>
+                            <li><a href="#">焦虑症测试</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="psychlogyTestPage.html">心理测试</a></li>
+                    <li>
+                        <a href="personalHomePage.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人账户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="personalHomePage.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;退出账户</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;切换账户</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article  style="margin-bottom: 50px;">
+        <section>
+            <canvas style="background: url(img/personalHomePage/luck.jpg);-webkit-background-size: cover;
+        background-size: cover;background-repeat: no-repeat;width: 75%;height: 260px;overflow: hidden;  margin-left: 15%;">
+            </canvas>
+        </section>
+        <section style="margin-left: 15%;">
+            <article>
+                <section>
+                    <div style="position: absolute;width: 57%; height: 90px; margin-top: 30px; background-color: #F0F2F5; opacity: 0.7;">
+                    </div>
+                    <div style="position: absolute;left: 17%;top: 229px;">
+                        <img class="head sec-picture" src="img/personalHomePage/user2.png" width="170px" height="125px">
+                        <span style="position: relative;left: 10px;top: 80px;">
+                    <a href="#"><strong>鱼尾QAQ</strong></a>
+                    <span class="little">加入时间：2017-4-28</span>
+                        </span>
+                        <p style="position: relative;left: 10px;top: 80px;">
+                            佛曰：慈悲不可说
+                        </p>
+                    </div>
+                </section>
+                <section class="Grid">
+                    <div class="Grid-cell">
+                        <div id="outer">
+                            <ul id="tab">
+                                <li class="current">关于我的</li>
+                                <li>我发表过的</li>
+                                <li>测评数据</li>
+                                <li>修改个人信息</li>
+                            </ul>
+                            <div id="content">
+                                <ul style="display:block;">
+                                    <section>
+                                        <p>
+                                            <a href="#"><img src="img/personalHomePage/user3.png" width="120px" height="90px" class="thead inhead">
+                                                <strong> 听海listern </strong></a> <span class="little">2017-5-3</span></p>
+                                        <p class="little">当你忍不住想要去承接别人的情绪的时候，当你忍不住想要去为别人的情绪负责的时候，去看看自己的心理动力是从哪里来的。是真的想要帮助别人，还是因为害怕出现冲突。</p>
+                                        <div class="comment left">
+                                            <a href="话题详情.html">为什么我的情绪问题越来越严重？</a>
+                                            <p class="little"><a href="#"><span>回复(58)</span></a></p>
+                                            <p class="little">
+                                                <a href="#">
+                                                    <span class="glyphicon glyphicon-hand-up"></span>
+                                                </a>(42)</p>
+                                            <p class="little">
+                                                <a href="#">
+                                                    <span class="glyphicon glyphicon-hand-down"></span>
+                                                </a>(20)</p>
+                                        </div>
+                                    </section>
+                                    <section>
+                                        <p>
+                                            <a href="#"><img src="img/personalHomePage/user4.jpg" width="120px" height="90px" class="thead inhead">
+                                                <strong> 小姐姐 </strong></a> <span class="little">2017-5-3</span></p>
+                                        <p class="little">当孩子的感受不被妈妈看见时，孩子为了维持关系，孩子会围着妈妈的感觉转，然而就失去自我。当我们的感受不被看到的时候，这种感觉太可怕了。</p>
+                                        <div class="comment left">
+                                            <a href="话题详情.html">为什么我的情绪问题越来越严重？</a>
+                                            <p class="little"><a href="#"><span>回复(58)</span></a></p>
+                                            <p class="little">
+                                                <a href="#">
+                                                    <span class="glyphicon glyphicon-hand-up"></span>
+                                                </a>(42)</p>
+                                            <p class="little">
+                                                <a href="#">
+                                                    <span class="glyphicon glyphicon-hand-down"></span>
+                                                </a>(20)</p>
+                                        </div>
+                                    </section>
+                                </ul>
+                                <ul>
+                                    <section>
+                                        <p> <img src="img/personalHomePage/user2.png" width="120px" height="90px" class="thead inhead"><a href="#">鱼尾QAQ</a>&nbsp;&nbsp;05/01</p>
+                                        <div>
+                                            <p>实名发表：<a href="#"><strong>别再拯救别人的情绪了</strong></a></p>
+                                            每一个在长期争吵不断的家庭下长大的孩子，都曾试图去做过拯救者，想拯救父母间糟糕的关系，想拯救争吵不断的家庭，想努力改变爸爸妈妈的关系>>>
+                                        </div>
+                                        <div class="comment left">
+                                            <p class="little"><a href="#"><span>回复(268)</span></a></p>
+                                        </div>
+                                    </section>
+                                    <section>
+                                        <p> <img src="img/personalHomePage/user2.png" width="120px" height="90px" class="thead inhead"><a href="#">鱼尾QAQ</a>&nbsp;&nbsp;05/01</p>
+                                        <div>
+                                            <p>匿名发表：<a href="#"><strong>有一个GAY蜜是件很酷的事情吗？</strong></a> </p>
+                                            <img src="img/personalHomePage/b219ebc4b74543a9d4c7674e1e178a82b8011457.jpg!thumbnail" width="90px" height="60px" class="sec-picture"> 知乎上也有一个同名问题，里面的主题思想是：如今有个gay蜜是一件很时尚的事情，仿佛gay蜜成为了一个可以拿出来显摆的资本。>>>
+                                        </div>
+                                        <div class="comment left">
+                                            <p class="little"><a href="#"><span>回复(999+)</span></a></p>
+                                        </div>
+                                    </section>
+                                    <section>
+                                        <p> <img src="img/personalHomePage/user2.png" width="120px" height="90px" class="thead inhead"><a href="#">鱼尾QAQ</a>&nbsp;&nbsp;05/01</p>
+                                        <div>
+                                            <p>匿名发表：<a href="#"><strong>老想查看伴侣的手机怎么破</strong></a> </p>
+                                            <img src="img/personalHomePage/cry.gif" width="90px" height="60px" style="float: left;border: 1.5px solid #6495ED;padding:2px;"> 罪恶感。可能看见不该看的，更糟的是没有看见不该看的，使我们对自己的多疑产生自我谴责。这种想要看，或明知不该看，却仍忍不住去窥视的心理，为什么会造成我们的困扰。>>>
+                                        </div>
+                                        <div class="comment left">
+                                            <p class="little"><a href="#"><span>回复(458)</span></a></p>
+                                        </div>
+                                    </section>
+                                </ul>
+                                <ul>
+                                    <section>
+                                        <p> <img src="img/personalHomePage/bg-gril.jpg" width="120px" height="90px" class="thead inhead"><a href="#">心理成熟度测评</a>&nbsp;&nbsp;05/01</p>
+                                        <div>
+                                            <p> 2147人测试过 12次收藏 2017-05-03 10:44:10 1条评论 本测试共23题</p>
+                                            <p style="color: #219A44; font-weight: bolder; ">我的结果 : C.你的个性成熟度属于中等水平</p>
+                                            你的个性成熟程度属于中等水平。你的个性具有两重性：一半老练，另一半是幼稚的。还需要在社会生活实践中慢慢磨炼。>>>
+                                        </div>
+                                        <div class="comment left">
+                                            <p class="little">
+                                                <button type="button" class="btn btn-success" href="#">再测一次</button>
+                                            </p>
+                                        </div>
+                                    </section>
+                                </ul>
+                                <ul>
+                                    <p> <img src="img/personalHomePage/user2.png" width="120px" height="90px" class="thead inhead"></p>
+                                    <form class="bs-example bs-example-form" role="form">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">昵称：</span>
+                                            <input type="text" class="form-control" placeholder="鱼尾QAQ ">
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">签名：</span>
+                                            <input type="text" class="form-control" placeholder="佛曰：慈悲不可说">
+                                        </div>
+                                        <br>
+                                    </form>
+                                    <br>
+                                    <div class=" comment left">
+                                        <button type="button" class="btn btn-primary">提交申请</button>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Grid-cell u-1of3">
+                        <div>
+                            <img src="img/personalHomePage/erweima.png" width="246px;">
+                        </div>
+                        <div style="width: 240px;height: 50px;margin-left:5px; margin-top: 35px;">
+                            <img src="img/personalHomePage/friend.png" width="100%">
+                            <div class="Tissue box">
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user6.png" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">菜菜</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user3.png" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">听海Lintern</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user.png" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">舍起风华</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user4.jpg" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">新军国机会</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user5.gif" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">还小妞</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/user7.jpg" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">AK-47</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/person.png" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">白狼</span></center>
+                                    </a>
+                                </div>
+                                <div style="display: block;">
+                                    <a href="#"><img src="img/personalHomePage/haiyougengduo.jpg" class="thead inhead" width="90px" height="60px">
+                                        <center><span class="little">查看更多</span></center>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="width: 240px;height: 50px;margin-left:5px; margin-top: 35px;">
+                                <img src="img/personalHomePage/fangke.png" width="100%">
+                                <div class="Tissue box">
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user6.png" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">菜菜</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user3.png" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">听海Lintern</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user.png" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">舍起风华</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user4.jpg" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">新军国机会</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user5.gif" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">还小妞</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/user7.jpg" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">AK-47</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/person.png" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">白狼</span></center>
+                                        </a>
+                                    </div>
+                                    <div style="display: block;">
+                                        <a href="#"><img src="img/personalHomePage/haiyougengduo.jpg" class="thead inhead" width="90px" height="60px">
+                                            <center><span class="little">查看更多</span></center>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </article>
+<div class="container visible-lg" style="margin-top: 180px;">
+        <footer class="yiban-footer">
+            <div class="container clearfix">
+                <div class="about-yiban">
+                    <a href="/service_treaty.php" target="_blank">用户协议</a>
+                    <span>|</span>
+                    <a href="http://open.yiban.cn/" target="_blank">开放平台</a>
+                    <span>|</span>
+                    <a href="http://hr.yiban.cn/" target="_blank">校园招聘</a>
+                    <span>|</span>
+                    <a href="http://search.51job.com/list/co,c,2306770,0000,10,1.html" target="_blank">社会招聘</a>
+                    <span>|</span>
+                    <a href="mailto:contact@yiban.cn">联系我们</a>
+                    <span>|</span>
+                    <a href="/help.html" target="_blank">客服中心</a>
+                    <span>|</span>
+                    <a href="/mobile/index.html" target="_blank">手机易班</a>
+                </div>
+                <div class="yiban-brand clearfix">
+                    <a class="icon brand-youke" href="http://www.yooc.me/u/yb2yooc" target="_blank"></a>
+                    <a class="icon brand-yiban" href="http://daxue.yooc.me/u/yb2daxue" target="_blank"></a>
+                    <a class="icon brand-k" href="http://xueyuan.yooc.me/u/yb2xueyuan" target="_blank"></a>
+                    <a class="icon brand-boya" href="http://www.21boya.cn/" target="_blank"></a>
+                    <a class="icon brand-zz" href="http://zz.yiban.cn/" target="_blank"></a>
+                    <a class="icon brand-hetaoshu" href="http://www.hetaoshu.com/" target="_blank"></a>
+                </div>
+                <div class="yiban-Legal clearfix">
+                    <p class="copyright" style="color: #324f68 !important;font-size:13px !important;">违法和不良信息举报电话：021-60161000 Copyright © 2009-2017 <a href="/">YIBAN</a>. All Rights Reserved. <a href="http://www.miibeian.gov.cn" target="_bank">沪ICP备15046059号-6</a>
+                        <br>版权所有：上海易班企业发展有限公司</p>
+                    <p class="copyright" style="margin-top:15px;">
+                        <a class="jubao" href="http://www.12377.cn/" target="_blank"><img src="img/yiban-footer/12377.png" title="中国互联网违法和不良信息举报中心"></a>
+                        <a class="jubao" href="http://jubao.12377.cn:13225/reportinputcommon.do" target="_blank"><img src="img/yiban-footer/jubao3.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
+                        <a class="jubao" href="http://www.shjbzx.cn/" target="_blank"><img src="img/yiban-footer/jubao2.png" title="上海市互联网违法和不良信息举报中心"></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+    <script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+    <script>
+    $(function() {
+        window.onload = function() {
+            var $li = $('#tab li');
+            var $ul = $('#content ul');
+
+            $li.mouseover(function() {
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('current');
+                $ul.css('display', 'none');
+                $ul.eq($t).css('display', 'block');
+            })
+        }
+    });
+    </script>
+
+</body>
+
+</html>

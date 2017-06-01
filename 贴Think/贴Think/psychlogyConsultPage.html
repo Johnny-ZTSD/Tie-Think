@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>心理咨询室-主页tst</title>
+    <meta name="viewport" content="width = device-width,initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/yiban-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/psychologyConsult.css">
+    <link rel="stylesheet" type="text/css" href="css/psychlogyConsult-model-intro.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-heart">&nbsp;贴Think</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="storyCommunityPage.html">故事社区</a></li>
+                    <li><a href="psychologyCommunityPage.html">心理社区</a></li>
+                    <li><a href="psychlogyConsultPage.html">心理咨询室</a></li>
+                    <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心理测评 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">心理健康测试</a></li>
+                            <li><a href="#">九型人格测试</a></li>
+                            <li><a href="#">趣味心理测试</a></li>
+                            <li><a href="#">职业规划测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">心理咨询量表测试</li>
+                            <li><a href="#">抑郁症测试</a></li>
+                            <li><a href="#">焦虑症测试</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="psychlogyTestPage.html">心理测试</a></li>
+                    <li>
+                        <a href="personalHomePage.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人账户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="personalHomePage.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;退出账户</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;切换账户</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- <第一板块:轮播图+小侧栏> -->
+        <div class="container row">
+            <div id="carousel-example-generic" class="col-lg-8 col-md-12 carousel slide" data-ride="carousel" style=";margin-top: 60px;padding: 0px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide [1140x500]" src="img/pcp/pcp_pic3.png" data-holder-rendered="true">
+                    </div>
+                    <div class="item">
+                        <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide [1140x500]" src="img/pcp/pcp_pic1.png" data-holder-rendered="true">
+                    </div>
+                    <div class="item active">
+                        <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide [1140x500]" src="img/pcp/pcp_pic2.png" data-holder-rendered="true">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- <第一板块区域：侧栏> -->
+            <div class="psychologyConsult-sidebar-container col-lg-4 col-md-12">
+                <script type="text/javascript">
+                var carouselLen = parseInt($("#carousel-example-generic").css("height"));
+                //轮播图高度
+                $(".psychologyConsult-sidebar-container").css("height", carouselLen)
+                    // alert($(".psychologyConsult-sidebar-container").css("height"));
+                </script>
+                <h4 class="psychologyConsult-sidebar-title" style=""><a href="#" style="color: white">案例呈现</a></h4>
+                <ul class="psychologyConsult-sidebar-list" style="">
+                    <li><a href="#">疑神疑鬼，心理不安！<small style="">&nbsp;2017-03-07</small></a></li>
+                    <li><a href="#">他追我我拒绝了他，可是见不到他...<small>&nbsp;2017-03-07</small></a></li>
+                    <li><a href="#">我在医院测智商180<small>&nbsp;2017-02-15</small></a></li>
+                    <li><a href="#">相爱容易相处难<small>&nbsp;2017-04-29</small></a></li>
+                    <li><a href="#">心里太压抑<small>&nbsp;2017-04-12</small></a></li>
+                </ul>
+                <script type="text/javascript">
+                //给ul的li设置行高
+                var listHeight = parseInt($(".psychologyConsult-sidebar-list>li").css("height"));
+                // alert(listHeight);
+                $(".psychologyConsult-sidebar-list>li").css("line-height", listHeight + 'px');
+                </script>
+            </div>
+        </div>
+        <!-- <第一板块:轮播图+小侧栏> -->
+        <!-- 版块介绍 -->
+        <div class="">
+            <div class="psychlogyConsult-model-intro">
+                <div class="psychlogyConsult-model-intro-stripe"></div>
+                <div class="psychlogyConsult-model-intro-text" style="">心理咨询室</div>
+            </div>
+            <div class="psychlogyConsult-intro-container ">
+                <div class="psychlogyConsult-intro-img-container">
+                    <img src="img/pcp/62143390351.jpg" style="width: 100%;height: 100%">
+                </div>
+                <div class="psychlogyConsult-intro-content-container">
+                    <div class="psychlogyConsult-intro-title" style="font-weight: bolder;">
+                        心理咨询室
+                    </div>
+                    <div class="psychlogyConsult-intro-contact">
+                        <span class="glyphicon glyphicon-earphone"></span> &nbsp;&nbsp;028-87720022
+                    </div>
+                    <div class="psychlogyConsult-intro-content">
+                        为了承接本校各类学生咨询，心理咨询室承担一对一的个案咨询或者一对多的家庭咨询。个体心理咨询室需要给来访者一定的安全感，使他们能够在心理咨询师面前真实的表达自己，帮助他们心理健康。咨询师与来访者的座位成L形摆放，这样咨询师和来访者双方既能够互相捕捉到对方的目光，又不至于因为目光的直视导致来访者的紧张感，来访者能够在一种相对安全舒适的环境下真实的表露自己。个体心理咨询室建议放置无声计时器，这样比较有利于心理咨询师掌握和调整咨询时间。同时在来访学生的位置附近摆放可以直接抓抱的毛绒玩具，使来访者和心理咨询师进行沟通的过程中更加自然放松。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="psychlogyConsult-model-intro">
+            <div class="psychlogyConsult-model-intro-stripe"></div>
+            <div class="psychlogyConsult-model-intro-text" style="">导师介绍</div>
+        </div>
+        <div class="row" style="">
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_1.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;徐少华
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1991-01-11
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; 清华大学哲学硕士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_2.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;罗文浩
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1989-11-23
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; 香港大学心理学博士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_12.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;王正平
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1989-07-21
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;华东师范大学教育学硕士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_13.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;吴清清
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1986-04-18
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;华东师范大学教育学硕士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_14.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;陈佩璋
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1936-03-30
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;北京大学心理学本科
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="">
+                        <img src="img/user/spvs_15.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; 寇延
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1987-10-22
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;湖南大学心理学硕士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="width: 40%">
+                        <img src="img/user/spvs_17.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;黄菡
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1986-07-19
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;南京大学社会心理学博士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervisor-post-container-outer col-lg-6">
+                <div class="supervisor-post-container-inner">
+                    <div class="supervisor-post-left" style="width: 40%">
+                        <img src="img/user/spvs_16.jpg">
+                        <div class="supervisor-post-btn">
+                            <button title="发起聊天" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <!-- <button>关闭聊天</button> -->
+                        </div>
+                    </div>
+                    <div class="supervisor-post-right" width="200px">
+                        <div class="supervisor-post-name ">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;林崇德
+                        </div>
+                        <div class="supervisor-post-age">
+                            <span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;1939-09-08
+                        </div>
+                        <div class="supervisor-post-certification">
+                            <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;北京师范大学心理学博士
+                        </div>
+                        <div class="supervisor-post-intro">
+                            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp; 擅长领域：青少年心理干预、情感、焦虑抑郁、自我认知
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模糊框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                    发起聊天...
+                </h4>
+                </div>
+                <div class="modal-body">
+                    请输入信息:
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        发送消息
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <!-- 页脚 -->
+    <div class="container visible-lg">
+        <footer class="yiban-footer">
+            <div class="container clearfix">
+                <div class="about-yiban">
+                    <a href="/service_treaty.php" target="_blank">用户协议</a>
+                    <span>|</span>
+                    <a href="http://open.yiban.cn/" target="_blank">开放平台</a>
+                    <span>|</span>
+                    <a href="http://hr.yiban.cn/" target="_blank">校园招聘</a>
+                    <span>|</span>
+                    <a href="http://search.51job.com/list/co,c,2306770,0000,10,1.html" target="_blank">社会招聘</a>
+                    <span>|</span>
+                    <a href="mailto:contact@yiban.cn">联系我们</a>
+                    <span>|</span>
+                    <a href="/help.html" target="_blank">客服中心</a>
+                    <span>|</span>
+                    <a href="/mobile/index.html" target="_blank">手机易班</a>
+                </div>
+                <div class="yiban-brand clearfix">
+                    <a class="icon brand-youke" href="http://www.yooc.me/u/yb2yooc" target="_blank"></a>
+                    <a class="icon brand-yiban" href="http://daxue.yooc.me/u/yb2daxue" target="_blank"></a>
+                    <a class="icon brand-k" href="http://xueyuan.yooc.me/u/yb2xueyuan" target="_blank"></a>
+                    <a class="icon brand-boya" href="http://www.21boya.cn/" target="_blank"></a>
+                    <a class="icon brand-zz" href="http://zz.yiban.cn/" target="_blank"></a>
+                    <a class="icon brand-hetaoshu" href="http://www.hetaoshu.com/" target="_blank"></a>
+                </div>
+                <div class="yiban-Legal clearfix">
+                    <p class="copyright" style="color: #324f68 !important;font-size:13px !important;">违法和不良信息举报电话：021-60161000 Copyright © 2009-2017 <a href="/">YIBAN</a>. All Rights Reserved. <a href="http://www.miibeian.gov.cn" target="_bank">沪ICP备15046059号-6</a>
+                        <br>版权所有：上海易班企业发展有限公司</p>
+                    <p class="copyright" style="margin-top:15px;">
+                        <a class="jubao" href="http://www.12377.cn/" target="_blank"><img src="img/yiban-footer/12377.png" title="中国互联网违法和不良信息举报中心"></a>
+                        <a class="jubao" href="http://jubao.12377.cn:13225/reportinputcommon.do" target="_blank"><img src="img/yiban-footer/jubao3.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
+                        <a class="jubao" href="http://www.shjbzx.cn/" target="_blank"><img src="img/yiban-footer/jubao2.png" title="上海市互联网违法和不良信息举报中心"></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    document.body.parentNode.style.overflow = 'scroll'; //设置可以滚屏
+    </script>
+</body>
+
+</html>

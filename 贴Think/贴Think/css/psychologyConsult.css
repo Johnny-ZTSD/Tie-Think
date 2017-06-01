@@ -1,0 +1,93 @@
+.supervisor-post-container-outer{
+	height: 300px;
+	/*width: 200px;*/
+	padding: 10px;
+	/*background-color: red*/
+	
+}
+
+.supervisor-post-container-inner{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 5px rgba(59,110,10,1);
+	padding: 10px;
+	/*background-color:rgba(59,110,10,0.6);*/
+	transition: 0.3s ease;
+	/*rgba(59,110,10,0.8)*/
+	/*padding: 5px;*/
+
+}
+
+.supervisor-post-container-inner:hover{
+    box-shadow: 0 0 15px rgba(59,110,10,0.8);
+}
+.supervisor-post-left{
+	width: 40%;
+	margin-right: 10px;
+}
+.supervisor-post-left>img{
+	/*background-color: red;*/
+	width: 100%;
+	/*width: 180px;*/
+	/*width: 180px;*/
+	/*height: 260px;*/
+	height: 100%;
+	
+}
+.supervisor-post-right{
+	/*padding-left: 10px;*/
+	text-indent: .4em;
+	background-color: rgba(0,0,0,0.1);
+	text-align: justify;
+    overflow: hidden;	
+}
+.supervisor-post-right>div{
+	height: 36px;
+	line-height: 36px;
+}
+.supervisor-post-name{
+	/*background-color: green;*/
+}
+
+.supervisor-post-age{
+	/*background-color: orange;*/
+}
+
+.supervisor-post-certification{
+	/*background-color: pink;*/
+}
+
+.supervisor-post-intro{
+	height: 70%;
+	/*background-color: gray;*/
+	text-overflow: ellipsis;
+	margin-bottom: 30px;
+	word-wrap: break-word ;
+}
+.supervisor-post-btn{
+	position: absolute;
+	right:; 
+	/*float: right;*/
+	/*position: absolute;*/
+    left:80px;
+	justify-content: center;
+	top:230px;
+}
+.supervisor-post-btn>button{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color:white;
+	/*border:1px solid gray;*/
+
+}
+.supervisor-post-btn>button:hover{
+    transform: scale(1.2);
+}
+.supervisor-post-btn>button:focus{
+	
+	/*border: 0px;*/
+	outline: none;
+}

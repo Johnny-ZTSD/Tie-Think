@@ -1,0 +1,226 @@
+.topic-plate{
+	height: 280px;
+	/*background:url(../img/er.jpg);*/
+	background:url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%,50%;
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius:0px;
+}
+
+.topic-plate-tittle{
+	font-family: "Microsoft Yahei";
+	font-weight: bolder;
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+.topic-plate-text{
+	margin-left: 20px;
+}
+
+.topic-plate-text-link{
+    color:black;
+}
+
+.topic-plate-content{
+	flood-color: black;
+
+}
+
+.topic-content-container{
+	height:700px;
+	/*background: black;*/
+}
+
+.topic-content-logo{
+	height: 60px;
+}
+
+.topic-content-logo-tittle{
+	padding-left: 10px;
+	line-height: 60px;
+	width: 30%
+	vertical-align: middle;
+	font-size: 25px;
+	font-family: SimHei;
+	background-color: #ECEFF2;
+}
+
+.topic-content-nav{
+	height: 130px;
+	background: #E1E1E1;
+}
+
+.topic-content-nav-text{
+	height: 20px;
+	font-family: LiSu;
+	font-size: 20px;
+}
+
+.topic-content-nav-content{
+	height: 20px;
+	line-height: 20px;
+	text-indent: 1em;
+	/*font-size: 18px;*/
+	font-family: 'Hei Ti';
+	background-color: #ECEFF2;
+	/*margin-bottom: 50px;*/
+}
+
+.topic-content-nav-button{
+	float: right;
+	margin-top: 8px;
+}
+
+.topic-content-second-container{
+	height: 640px;
+	padding-top: 20px;
+	/*background-color: gray;*/
+}
+
+/*.topic-content-model{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:5px;
+	height: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color:rgba(38,96,188,0.6); 
+
+	box-sizing: border-box;
+	text-overflow: hidden;
+}
+
+.topic-model-info{
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+	height: 80px;
+	padding: 5px;
+	background-color:rgba(0,0,0,0.8);
+    
+    vertical-align: middle;
+    text-align: center;
+}
+
+.topic-model-info-head{
+	width: 10%;
+	background-color: green;
+}
+
+.topic-model-info-text{
+	width: 75%;
+	text-overflow: hidden;
+	background-color:white; 
+}
+
+.topic-model-info-tittle{
+	font-weight: bolder;
+	font-size: 2em;
+	
+}
+.topic-model-info-content{
+	font-size: 1.5em;
+}
+
+.topic-model-info-model{
+	width: 15%;
+	background-color:gray; 
+}
+
+.topic-model-info-model-author{
+	line-height: 28px;
+	height: 35px;
+	width: 100%; 
+	background-color: red;
+}
+.topic-model-info-model-date{
+	line-height: 28px;
+	height: 35px;
+	width: 100%; 
+	background-color: green;
+}
+
+.topic-model-hotReview{
+	padding: 5px;
+	width: 99%;
+	height: 70px; 
+	vertical-align: middle;
+	text-align: left;
+	background: rgba(0,0,0,0.3);
+
+	display: flex;
+}
+.topic-model-hotReview-head{
+	text-align: center;
+	height: 100%;
+	width: 8%;
+	background-color: red;
+}
+.topic-model-hotReview-user{
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+}
+.topic-model-hotReview-user-person{
+	height: 35%;
+	width: 100%;
+	display: flex;
+	background-color: white;
+}
+.topic-model-hotReview-user-person-name{
+	height: 100%;
+	width: 35%;
+	background-color: white;
+}
+.topic-model-hotReview-user-person-light{
+	height: 100%;
+	width: 65%;
+	text-align: right;
+}
+.topic-model-hotReview-user-content{
+	height: 60%;
+	width: 100%;
+	margin-left: 5px;
+}
+.topic-model-hotReview-content{
+	height: 50%;
+	width: 100%;
+	background-color: blue;
+}
+
+.topic-model-footer{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 99%;
+	height: 40px;
+	background: green;
+}
+*/
+
+.topic-content-footer{
+	height: 70px;
+	background-color: purple;
+}
+
+
+
+
+#light-on:hover>img{
+   border-radius: 7px;	
+   box-shadow: 0 0 5px green;
+}
+
+#light-off:hover>img{
+   border-radius: 7px;	
+   box-shadow: 0 0 5px red;
+}
+
+
+

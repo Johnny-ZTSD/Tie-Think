@@ -1,0 +1,107 @@
+.psychologyConsult-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 60px;
+    /*padding-top:10px;*/
+    /*height:100%;*/
+    background-color:rgba(59,110,10,0.8);
+}
+
+.psychologyConsult-sidebar-title {
+    height: 2em;
+    line-height: 2em;
+    text-indent: 1em;
+    color: white
+    /*background-color: red;*/
+}
+
+.psychologyConsult-sidebar-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-indent: 1em;
+
+    /*background-color: red;*/
+}
+.psychologyConsult-sidebar-list>li{
+	background-color: white;
+	box-shadow: 0 0 5px;
+	margin-top: 3px;
+	height: 20%;
+}
+.psychologyConsult-sidebar-list>li small{
+	float: right;
+	margin-right: 1em
+}
+
+.psychlogyConsult-model-intro {
+    display: flex;
+    /*justify-content: */
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.psychlogyConsult-model-intro-stripe {
+    height: 100%;
+    width: 0.5%;
+    background-color: #3b6e09;
+}
+
+.psychlogyConsult-model-intro-text {
+    width: 99.5%;
+    text-indent: 0.8em;
+    color: #1e3b01;
+    font-size: 1.5em;
+    /*border:2px solid black;*/
+    background: linear-gradient(to right, #85d931 10%, #ffffff);
+}
+
+.psychlogyConsult-intro-container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 10px;
+    /*box-sizing: border-box;*/
+    background-color: #88da37;#65b417;
+    /*3b6e09*/
+    font-size: 20px;
+    font-family: "华文仿宋";
+    color: white;
+    border-radius: 5px;
+}
+
+.psychlogyConsult-intro-img-container {
+    width: 20%;
+    height: 100%
+}
+
+.psychlogyConsult-intro-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    /*background-color: gray*/
+}
+
+.psychlogyConsult-intro-title {
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.psychlogyConsult-intro-contact {
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.psychlogyConsult-intro-content {
+    text-overflow: hidden;
+    overflow: hidden;
+}

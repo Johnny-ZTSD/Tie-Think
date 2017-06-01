@@ -1,0 +1,210 @@
+/*psychlogyTestPage.html*/
+
+.psychlogyTest-header-container {
+    width: 100%;
+    /*background-color: green;*/
+    /*border: 1px solid gray;*/
+}
+
+.psychlogyTest-header-container h3 {
+    font-family: "黑体";
+    font-weight: bolder;
+}
+
+.psychlogyTest-header-model {
+    /*height:90px;*/
+    /*background-color: red;*/
+}
+
+.psychlogyTest-header-model-container li a {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    /**/
+    color: #4C4C4C;
+    text-decoration: none;
+}
+
+.psychlogyTest-header-model-container {
+    /*display: flex;*/
+    font-size: ;
+    padding: 10px;
+    /*width: 20%;*/
+    /*height: 8em;*/
+    background-color: white;
+}
+
+.psychlogyTest-header-model {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /*background-color: pink;*/
+    /*margin-right: 1px;*/
+    transition: 0.5s all;
+}
+
+.psychlogyTest-header-model:hover img {
+    box-shadow: 0 0 5px gray;
+}
+
+.psychlogyTest-header-model-img {
+    height: 6em;
+    width: 6em;
+    /*border-radius: 3em;*/
+    /*background-color: white;*/
+}
+
+.psychlogyTest-header-model-img>img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 3em;
+    border: 0.3em solid white;
+}
+
+.psychlogyTest-header-model-link {
+    text-decoration: none;
+    /*height: 2em;*/
+    font-size: 1em;
+    color: #666;
+}
+
+.psychlogyTest-header-model-link:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+
+/*卡片模块*/
+
+.psychlogyTest-body-post-model {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 18px;
+    background-color: #f8f8f8;
+}
+
+.psychlogyTest-body-post-model {
+    padding: 5px;
+    /*background-color: gray;*/
+    border-bottom: 1px solid #999;
+    box-shadow: 0 0 3px #555;
+    height: 18em;
+    text-overflow: hidden;
+}
+
+.psychlogyTest-body-post-img {
+    height: 10em;
+    /*background-color: red;*/
+    width: ;
+}
+
+.psychlogyTest-body-post-img>img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.psychlogyTest-body-post-img>img:hover {
+    opacity: 0.8;
+}
+
+.psychlogyTest-body-post-content {
+    height: 8em;
+    font-size: 1em;
+    vertical-align: middle;
+    text-overflow: hidden;
+    overflow: hidden;
+}
+
+.psychlogyTest-body-post-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.psychlogyTest-body-post-content a:link,
+.psychlogyTest-body-post-content a:visited,
+.psychlogyTest-body-post-content a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.psychlogyTest-body-post-title {
+    /*height: 4em;*/
+    line-height: 2em;
+    font-weight: bolder;
+    /*font-size: 20px;*/
+    font-size: 1.5em;
+}
+
+
+/*psychlogyTestDetail.html*/
+
+.psychlogyTest-detail-main {
+    height: 600px;
+    /*background-color: red;*/
+    padding: 10px;
+}
+
+.psychlogyTest-detail-main-question-body {
+    height: auto;
+}
+
+.inputsBox {
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 0 0 3px gray;
+}
+
+.inputsBox-input {
+    height: 5em;
+    line-height: 5em;
+    text-indent: 2em;
+    color: black;
+    /*background-color: green;*/
+    border-bottom: 1px solid gray;
+}
+
+.inputsBox-input>input[type="radio"] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.inputsBox-input:hover {
+    background-color: #f2f2f2;
+}
+
+.inputsBox-input label {
+    font-weight: normal;
+    font-size: 1.4em;
+    text-indent: 0.2em;
+    color: color: #f2f2f2;
+}
+
+
+/*sideBar*/
+
+.psychlogyTest-detail-sidebar {
+    /*height: 200px;*/
+    /*background-color: green;*/
+    box-shadow: 0 0 5px gray
+}
+
+.psychlogyTest-model-title-container {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.psychlogyTest-model-title-text {
+    width: 98%;
+    height: 2em;
+    line-height: 2em;
+    text-indent: .6em;
+    background: linear-gradient(to right, #97d060 , #ffffff);
+}
